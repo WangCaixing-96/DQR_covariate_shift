@@ -1,0 +1,24 @@
+layer_specs: [16,16,16]  # N-2 layers that contains infos except input/output
+
+activation: "ReLU" # could be ["sigmoid", "ReLU", "tanh"]
+
+optimizer: "SGD"  # could be ["SGD", "Adam"]
+
+# only available for SGD as optimizer
+# nesterov momentum
+nesterov: True
+
+# default to be 0
+momentum: 0.9
+
+# learning rate decay rate
+lr_decay: 0.5
+
+# dropout prop
+dropout_proportion: 0.01
+
+# regularization, if l1 weight = 0, then l2, visa versa, if (0,1) -> elastic net, if -1, no penalty
+L_1_weight: -1
+
+# regularization constant
+lambda: 0
